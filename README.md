@@ -125,11 +125,9 @@ preference pane.
 ```
 1. 安装 python 环境
 2. 安装 virtualenv  `pip install virtualenv`
-3. 进入到 script 文件夹下，执行 python create-virtualenv-bootstrap.py
-4. 当前目录会生成 bootstrap-ponyd.py 文件
-5. 执行 python bootstrap-ponyd.py ~/Library/PonyDebugger 创建虚拟环境
-6. source ~/Library/PonyDebugger/bin/activate 把当前终端环境变为虚拟环境
-7. 
+3. 进入到 scripts 目录下 sudo python bootstrap-ponyd.py --ponyd-symlink=/usr/local/bin/ponyd ~/Library/PonyDebugger 安装
+4. 执行 ponyd serve --listen-interface=127.0.0.1  （如果要真机使用，把ip改为电脑ip地址即可）
+5. 打开 http://127.0.0.1:9000 网页成功显示表示安装成功
 ```
 
 This will install `ponyd` script to `~/Library/PonyDebugger/bin/ponyd` and

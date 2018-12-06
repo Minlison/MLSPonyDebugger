@@ -27,6 +27,9 @@ setup(
     install_requires=['tornado', 'pybonjour==1.1.1'],
     dependency_links=['https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/pybonjour/pybonjour-1.1.1.tar.gz'],
     packages=['ponyd'],
+    package_data= {
+        'ponyd' : ['web/*','web/**/*'],
+    },
     include_package_data=True,
     zip_safe=False,
     entry_points = {

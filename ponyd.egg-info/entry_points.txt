@@ -1,0 +1,3 @@
+[console_scripts]
+ponyd = ponyd.command:PonydCommand.main
+
